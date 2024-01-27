@@ -52,7 +52,7 @@ hr {
 .container:hover{
     background-color: rgb(255, 255, 123);
 }
-.container p:hover{
+.galleryProductName:hover{
     font-weight: bold;
 }
 /*link settings*/
