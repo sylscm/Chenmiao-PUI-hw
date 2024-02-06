@@ -25,6 +25,7 @@
           <div class="productnCartSpace">
             <a href="../cart.html" class="no-underline">
             <h2 class="cartButton">CART</h1></a>
+            <span class="cartBadge">2</span>
           </div>
         </div>
         <!--hr-->
@@ -39,46 +40,42 @@
     </div>
 
 
-
-
-
-
-
     
     <!--product-->
-    <div class="container">
+    <div class="productContainer">
         <img src="/assets/products/original-cinnamon-roll.jpg"/>
+      <div class="productDetailedInfo">
+        <!--flexbox part 1: text-->
+        <div  class="productText">
+          <p>Customize our delicious, hand-making cinnamons to your liking!</p>
+        </div>
+        <!--flexbox part 2: dropdown menus-->
+        <div class="dropdown-menus">
+            <!--glazings-->
+            <div>
+              <label>Glazing:</label></div>
+            <select class="menu">
+              <option>Keep original</option>
+              <option>Sugar milk</option>
+              <option>Vanilla milk</option>
+              <option>Double chocolate</option>
+            </select>
+            <!--pack sizes-->
+            <div>
+              <label>Pack size:</label></div>
+            <select class="menu">
+              <option>1</option>
+              <option>3</option>
+              <option>6</option>
+              <option>12</option>
+            </select>
+        </div>
+        <!--flexbox part 3: adding product-->
+        <div class="addingProduct">
+            $2.49
+            <button class="add-button">Add to Cart</button>
+        </div>
     </div>
-    <p class="productText">Customize our delicious, hand-making cinnamons to your liking!</p>
-
-    <!--dropdown menu-->
-    <center class="dropdown-menus">
-      <!--glazings-->
-      <div>
-        <label>Glazing:</label></div>
-      <select class="menu">
-        <option>Keep original</option>
-        <option>Sugar milk</option>
-        <option>Vanilla milk</option>
-        <option>Double chocolate</option>
-      </select>
-      <!--pack sizes-->
-      <div>
-        <label>Pack size:</label></div>
-      <select class="menu">
-        <option>1</option>
-        <option>3</option>
-        <option>6</option>
-        <option>12</option>
-      </select>
-    </center>
-
-    <center>
-      <div class="addingProduct">
-        $2.49
-        <button class="add-button">Add to Cart</button>
-      </div>
-    </center>
     
   </body>
 </html>

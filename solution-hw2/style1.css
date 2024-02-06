@@ -8,7 +8,7 @@ hr {
     height: 4px;
     background-color: black;
 }
-/*title*/
+/*header*/
 .productButton{
     margin-right: 20px;
     margin-left: 20px;
@@ -56,6 +56,20 @@ hr {
 .productnCartSpace{
     border: 0px, 200px;
 }
+.cartBadge{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
 /*gallery blocks*/
 .galleryDisplay{
     display: flex;
@@ -68,16 +82,15 @@ hr {
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
     margin: 0 auto;
-    margin-top: 20px;
-    width: 300px;
+    margin-top: 50px;
+    width: 289px;
     text-align: left;
 }
 .container img{
-    width: 290px;
-    border: 5px solid black;
+    width: 285px;
+    border: 2px solid black;
 }
 .container p{
     font-size: 20px;
@@ -129,8 +142,8 @@ a.no-underline{
 }
 
 .itemInfo img{
-    width: 190px;
-    border: 5px solid black;
+    width: 200px;
+    border: 2px solid black;
 }
 .itemInfo p{
     font-size: 20px;
@@ -157,33 +170,54 @@ a.no-underline{
     text-decoration-line: underline;
 }
 /*product detailed page*/
+.productContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.productContainer img{
+    width: 600px;
+    border: 2px solid black;
+}
+.productContainer p{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 0px;
+}
+.productDetailedInfo{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+}
 .productText{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 20px;
 }
 .dropdown-menus{
     line-height: 2.5;
 }
 .menu{
-    width: 150px;
+    width: 300px;
     height: 40px;
     font-size: 100%;
 }
 .addingProduct{
-    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 150px;
-    height: 20px;
-    margin-top: 20px;
     align-items: center;
-    column-gap: 15px;
+    width: 200px;
+    gap: 15px;
+    padding-left: 90px;
     font-size: 15px;
 }
 .add-button{
     background-color:rgb(255, 255, 123);
-    padding: 5px;
+    width: 200px;
+    height: 40px;
 }
 
 
