@@ -78,7 +78,6 @@ hr {
     justify-content: center;
     width: 1100px;
 }
-
 .container{
     display: flex;
     flex-direction: column;
@@ -94,7 +93,7 @@ hr {
 }
 .container p{
     font-size: 20px;
-    margin: 5px;
+    margin: 20px;
     margin-left: 0px;
 }
 .container:hover{
@@ -175,6 +174,7 @@ a.no-underline{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-top: 100px;
 }
 .productContainer img{
     width: 600px;
@@ -203,21 +203,25 @@ a.no-underline{
     width: 300px;
     height: 40px;
     font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .addingProduct{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 200px;
+    width: 300px;
     gap: 15px;
-    padding-left: 90px;
     font-size: 15px;
+    font-weight: bold;
+    
 }
 .add-button{
     background-color:rgb(255, 255, 123);
     width: 200px;
     height: 40px;
+    font-weight: bold;
 }
 
 
