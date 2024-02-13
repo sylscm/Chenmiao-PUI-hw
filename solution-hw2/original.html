@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style1.css">
+    <script src="random-element.js" defer></script>
     <title>Original cinnamon roll</title>
   </head>
 
@@ -52,25 +53,25 @@
             <!--glazings-->
             <div>
               <label>Glazing:</label></div>
-            <select class="menu">
-              <option>Keep original</option>
-              <option>Sugar milk</option>
-              <option>Vanilla milk</option>
-              <option>Double chocolate</option>
+            <select class="glazingMenu">
+              <option value="0">Keep original</option>
+              <option value="1">Sugar milk</option>
+              <option value="2">Vanilla milk</option>
+              <option value="3">Double chocolate</option>
             </select>
             <!--pack sizes-->
             <div>
               <label>Pack size:</label></div>
-            <select class="menu">
-              <option>1</option>
-              <option>3</option>
-              <option>6</option>
-              <option>12</option>
+            <select class="packSizeMenu">
+              <option value="0">1</option>
+              <option value="1">3</option>
+              <option value="2">6</option>
+              <option value="3">12</option>
             </select>
         </div>
         <!--flexbox part 3: adding product-->
         <div class="addingProduct">
-            $2.49
+            <p id="totalPrice">$2.49</p>
             <button class="add-button">Add to Cart</button>
         </div>
     </div>

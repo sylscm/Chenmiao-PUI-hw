@@ -199,7 +199,14 @@ a.no-underline{
 .dropdown-menus{
     line-height: 2.5;
 }
-.menu{
+.glazingMenu{
+    width: 300px;
+    height: 40px;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.packSizeMenu{
     width: 300px;
     height: 40px;
     font-size: 100%;
@@ -225,6 +232,9 @@ a.no-underline{
 }
 
 
+#totalPrice{
+    font : 2.49;
+}
 
 
 
