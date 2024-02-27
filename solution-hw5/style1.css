@@ -117,7 +117,6 @@ a.no-underline{
     margin-left: 400px;
 }
 
-
 #cart-template{
     display: flex;
 }
@@ -149,7 +148,7 @@ a.no-underline{
     justify-content: flex-start;
     gap: 20px;
 }
-.price{
+.cartTotalPrice{
     display: flex;
     align-items: center;
 }
