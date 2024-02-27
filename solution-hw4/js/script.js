@@ -74,6 +74,7 @@ rollImage.src = '../assets/products/' + rolls[chosenRoll].imageFile;
 function onSelectGlazingChange(event){
     let glazingIndex = parseInt(event.target.value);
     let glazingChosen = allGlazings[glazingIndex];
+    console.log(glazingChosen)
     currentGlazingPrice = basePrice + glazingChosen.price;
     displayPrice();
 }
