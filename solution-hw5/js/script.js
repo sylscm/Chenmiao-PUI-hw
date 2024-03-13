@@ -198,4 +198,5 @@ function onClickButton(event){
     console.log(cart);
 }
 const addButton = document.querySelector('.add-button');
-addButton.addEventListener('click', onClickButton); */
+addButton.addEventListener('click', onClickButton); 
+*/
