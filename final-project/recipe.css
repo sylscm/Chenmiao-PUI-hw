@@ -11,6 +11,11 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
+.content-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
 .menu-container{
     display: flex;
     flex-direction: column;
@@ -19,7 +24,7 @@ a{
 }
 .topic{
     color: rgb(0, 0, 0);
-    font-size: 200px;
+    font-size: 100px;
     text-align: left;
     margin-bottom: 15px;
     margin-top: 50px;
@@ -40,6 +45,7 @@ a{
     padding-bottom: 15px;
     padding-left: 15px;
     border-radius: 50px;
+    background-color: #fbfbe6;
   }
   
 .recipe-title:hover {
@@ -101,14 +107,9 @@ a{
     padding-bottom: 15px;
     padding-left: 15px;
     border-radius: 50px;
-    background-color: #fbfbe6;
 }
 
 .home-title:hover {
     font-size: 50px;
     background-color: #ffffff;
-  }
-
-.runaway{
-    width: 30px;
   }
