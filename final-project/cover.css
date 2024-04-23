@@ -1,3 +1,88 @@
-.topic{
-    color:aquamarine;
+body { background-color: #f0edd1; 
 }
+a:link, a:visited{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.cover-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.topic{
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    cursor: move;
+}
+.recipe-container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.recipe-title {
+    font-size: 30px;
+    position: relative;
+    transition: font-size 1s;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 50px;
+  }
+  
+.recipe-title:hover {
+    font-size: 50px;
+    background-color: #ffffff;
+  }
+.fridge-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.fridge-title{
+    font-size: 30px;
+    position: relative;
+    transition: font-size 1s;
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 50px;
+}
+
+.fridge-title:hover {
+    font-size: 50px;
+    background-color: #ffffff;
+  }
+.cart-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cart-title{
+    font-size: 30px;
+    position: relative;
+    transition: font-size 1s;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 50px;
+}
+
+.cart-title:hover {
+    font-size: 50px;
+    background-color: #ffffff;
+  }
