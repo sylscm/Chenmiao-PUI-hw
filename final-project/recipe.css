@@ -1,5 +1,13 @@
-body { background-color: #f0edd1; 
+html {
+    height: 100%;
+    width: 100%;
 }
+
+body { 
+    background-color: #f1e5b8; 
+    min-height: 100%;
+}
+
 a:link, a:visited{
     color: black;
 }
@@ -13,14 +21,7 @@ a{
 }
 .content-container{
     display: flex;
-    flex-direction: column;
-    flex-grow: 2;
-}
-.menu-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-content: flex-end;
+    flex-direction: row;
 }
 .topic{
     color: rgb(0, 0, 0);
@@ -29,6 +30,51 @@ a{
     margin-bottom: 15px;
     margin-top: 50px;
     cursor: move;
+}
+
+#titleAndContent{
+    display: flex;
+    flex-direction: row;
+}
+#sections{
+    width: 450px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.vl {
+    border-left: 2px solid black;
+    height: 100%;
+}
+.categories{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.categories a{
+    margin-bottom: 20px;
+}
+#left-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.topic{
+    color: rgb(0, 0, 0);
+    font-size: 150px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    cursor: move;
+    padding-left: 50px;
+    margin-top: 5px;
 }
 .recipe-container{
     display: flex;
@@ -45,12 +91,12 @@ a{
     padding-bottom: 15px;
     padding-left: 15px;
     border-radius: 50px;
-    background-color: #fbfbe6;
+    background-color:rgb(223, 214, 181);
   }
   
 .recipe-title:hover {
     font-size: 50px;
-    background-color: #ffffff;
+    background-color: #d6f1be;
   }
 .fridge-container{
     display: flex;
@@ -60,7 +106,7 @@ a{
     font-size: 30px;
     position: relative;
     transition: font-size 1s;
-    text-align: center;
+    text-align: right;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -70,7 +116,7 @@ a{
 
 .fridge-title:hover {
     font-size: 50px;
-    background-color: #ffffff;
+    background-color: #d6f1be;
   }
 .cart-container{
     display: flex;
@@ -90,7 +136,7 @@ a{
 
 .cart-title:hover {
     font-size: 50px;
-    background-color: #ffffff;
+    background-color: #d6f1be;
   }
 
 .home-container{
@@ -111,5 +157,92 @@ a{
 
 .home-title:hover {
     font-size: 50px;
-    background-color: #ffffff;
+    background-color: #d6f1be;
   }
+
+.subtitles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.add-recipe{
+    font-size: 25px;
+    height: 30px;
+    border: 5px;
+    margin-left: 30px;
+    width: 40px;
+    background: rgb(166, 137, 83);
+    color: white;
+    margin-right: 200px;
+}
+.add-recipe:hover{
+    background-color:rgb(135, 128, 101);
+}
+.add-dessert{
+    font-size: 25px;
+    height: 30px;
+    border: 5px;
+    margin-left: 30px;
+    width: 40px;
+    background: rgb(166, 137, 83);
+    color: white;
+    margin-right: 200px;
+}
+.section-content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+}
+#section-content-main-course, #section-content-dessert, #section-content-drink{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.recipe{
+    padding: 10px;
+    margin: 20px;
+    background-color:rgb(255, 255, 255);
+}
+  .recipe-name, .recipe-content {
+    width: 95%;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color:rgb(246, 240, 216);
+  }
+  
+  .recipe-name {
+    height: 40px; /* Fixed height for better alignment */
+  }
+  
+  .recipe-content {
+    height: 100px;
+    resize: vertical; /* Allows vertical resize only */
+  }
+  .add-recipe, .delete-recipe {
+    font-size: 16px;
+    cursor: pointer;
+}
+  .delete-recipe {
+    background-color: #9a9292;
+    color: white;
+    border: none;
+}
+
+.delete-recipe:hover {
+    background-color: #9c8653;
+}
+
+@media (max-width: 768px) {
+    .cover-container {
+        flex-direction: column;
+    }
+
+    .vl {
+        display: none; /* Hide vertical line on smaller screens */
+    }
+}

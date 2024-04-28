@@ -1,7 +1,12 @@
+html {
+    height: 100%;
+}
 body { 
     background-color: rgb(255, 255, 255);
-    cursor: url('https://p1.hiclipart.com/preview/218/477/240/kitchen-knife-black-handle-knife-png-clipart.jpg') 50 50, pointer;
+    cursor: url(knife.png), pointer;
+    min-height: 100%;
 }
+
 a:link, a:visited{
     color: black;
 }
@@ -25,7 +30,6 @@ a{
     text-align: left;
     margin-bottom: 15px;
     margin-top: 50px;
-    cursor: move;
 }
 .recipe-container{
     display: flex;

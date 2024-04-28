@@ -7,16 +7,59 @@
 </head>
 <body>
   <div class="cover-container">
+    <div id="left-content">
       <div class="content-container">
-        <div>
-          <h1 draggable="true" class="topic">My Recipes</h1>
-        </div>
-
-
-
         
-
+          <h1 class="topic">My Recipes</h1>
+        
       </div>
+      <div id="titleAndContent">
+        <div class="recipe-container">
+          <div class="categories">
+              <a href="#main-course">
+                <p>Main Course</p></a>
+              <a href="#dessert">
+                <p>Dessert</p></a>
+              <a href="#drink">
+                <p>Drink</p></a>
+          </div>
+        </div>
+        <div class="vl"></div>
+        <div id="sections">
+          <section id="main-course">
+            <div class="subtitles">
+              <h2>Main Courses</h2>
+            </div>
+            <div id="section-content-main-course">
+              <h3>Click the button to add your recipes~</h3>
+              <button class="add-recipe" type="button">+</button>
+            </div>
+          </section>
+
+          <section id="dessert">
+            <div class="subtitles">
+              <h2>Desserts</h2>
+            </div>
+            <div id="section-content-dessert">
+              <h3>Click the button to add your recipes~</h3>
+              <button class="add-recipe" type="button">+</button>
+            </div>
+          </section>
+
+          <section id="drink">
+            <div class="subtitles">
+              <h2>Drinks</h2>
+            </div>
+            <div id="section-content-drink">
+              <h3>Click the button to add your recipes~</h3>
+              <button class="add-recipe" type="button">+</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+    </div>
       <div class="menu-container">
         <div class="home-container">
             <a href="./cover.html">
@@ -35,7 +78,11 @@
         </div>
       </div>
   </div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="recipe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
 </html>

@@ -1,87 +1,114 @@
-/* Darker background-color on hover */
-  ul li:hover {
+body{ 
+    background-color: #f6e0e6;
+    }
+
+.parallel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}
+ul{
+    list-style-type: none;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
     background: #ffffff;
-  }
+    font-size: 18px;
+    transition: 0.2s;
+    width: 800px;
+    margin: 20px;
+}
   
-  /* When clicked on, add a background color and strike out text */
-  ul li.checked {
+/* Darker background-color on hover */
+ul li:hover {
+    background: #f3afaf;
+}
+  
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
+}
   
-  /* Add a "checked" mark when clicked on */
-  ul li.checked::before {
-    content: '';
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '✓';
     position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
     top: 10px;
     left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
+}
   
   /* Style the close button */
-  .delete {
+.close {
     position: absolute;
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
-  }
+}
   
-  .delete:hover {
+.close:hover {
     background-color: #f44336;
     color: white;
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: #f44336;
-    padding: 30px 40px;
+}
+.upper-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* Style the header */
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 320px;
     border:#f5cece;
     color: white;
     text-align: center;
-    padding-bottom: 100px;
-  }
+}
   
-
+#input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
   
   /* Style the input */
-  input {
-    margin: 0;
+input {
+    margin: 20px;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 200px;
     padding: 10px;
     float: left;
     font-size: 16px;
-  }
-  
+}
+.button-container{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+    font-size: 16px;
+}
   /* Style the "Add" button */
-  .add {
+.add {
+    width: 100px;
     padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
+    background: #e9bfcd;
     color: #555;
     float: left;
+    border-color:#eab9b9;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
-  }
-  
-  .addBtn:hover {
-    background-color: #bbb;
-  }
-
-  body { 
-    background-color: rgb(255, 255, 255);
-    cursor: url('https://p1.hiclipart.com/preview/218/477/240/kitchen-knife-black-handle-knife-png-clipart.jpg') 50 50, pointer;
 }
+  
+.add:hover {
+    background-color: #bbb;
+}
+
 a:link, a:visited{
     color: black;
 }
@@ -105,15 +132,16 @@ a{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    justify-content: flex-end;
 }
+
 .topic{
     color: rgb(0, 0, 0);
-    font-size: 200px;
-    text-align: left;
+    font-size: 150px;
     margin-bottom: 15px;
-    margin-top: 50px;
+    padding-bottom: 0px;
     cursor: move;
+    padding-left: 50px;
+    margin-top: 5px;
 }
 .recipe-container{
     display: flex;
@@ -170,6 +198,7 @@ a{
     padding-bottom: 15px;
     padding-left: 15px;
     border-radius: 50px;
+    background-color: #ecbed1;
 }
 
 .cart-title:hover {
@@ -191,7 +220,6 @@ a{
     padding-bottom: 15px;
     padding-left: 15px;
     border-radius: 50px;
-    background-color: #f4f4d8;
 }
 
 .home-title:hover {
