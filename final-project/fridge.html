@@ -2,12 +2,46 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="cover.css">
+    <link rel="stylesheet" type="text/css" href="fridge.css">
     <title>Cover Page</title>
 </head>
 <body>
-    
+    <div class="general-container">
+        <div id="fridge-content">
+            <div>
+                <h1 class="topic">My Fridge</h1>
+                
+            </div>
+            <div class="header">
+                <div id="input-container">
+                    <input type="text" id="myInput" placeholder="...">  
+                </div>    
+            </div>
+            <div class="button-container"><button onclick="newElement()" class="add">Add</button>
+            </div>
+                <ul id="shopping-list">
+                </ul>
+        </div>
+        <div class="menu-container">
+            <div class="home-container">
+                <a href="./index.html">
+                <p class="home-title">Home</p></a>
+            </div>
+            <div class="cart-container">
+                <a href="./cart.html">
+                <p class="cart-title">My cart</p></a>
+            </div>
+            <div class="recipe-container">
+                <a href="./recipe.html">
+                <p class="recipe-title">My Recipes</p></a>
+            </div>
+            <div class="fridge-container">
+                <a href="fridge.html">
+                <p class="fridge-title">My Fridge</p></a>
+            </div>
+        </div>
+    </div>
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="cover.js"></script>
+<script src="fridge.js"></script>
 </html>

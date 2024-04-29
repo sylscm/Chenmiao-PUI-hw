@@ -1,0 +1,219 @@
+body{ 
+    background-image: url('../assets/project-image/fridge.jpg');
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.general-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#fridge-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.topic{
+    color: rgb(50, 54, 54);
+    font-size: 150px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    cursor: move;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+/*input styling*/
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 320px;
+    border:#f5cece;
+    color: white;
+    text-align: center;
+}
+#input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input {
+    margin: 20px;
+    border: none;
+    border-radius: 0;
+    width: 200px;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color:#bfdfe9;
+    border:5px solid #869ea9;
+}
+/*Addbtn styling*/
+.button-container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+    font-size: 16px;
+}
+.add {
+    width: 100px;
+    padding: 10px;
+    background: #bfdfe9;
+    color: #555;
+    float: left;
+    border:5px solid #869ea9;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+.add:hover {
+    background-color: #bbb;
+}
+/*list item styling*/
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
+    
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #f3ebb7;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 100px;
+    margin: 20px;
+    border: 5px solid #e1d7a2;
+
+}
+ul li:hover {
+    background: #fff291;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+/*check mark*/
+ul li.checked::before {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+.deleteBtn {
+    position: absolute;
+    width: 20px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    font-size: 20px;
+    padding: 7px 25px 8px 16px;
+    border:none;
+    background-color:transparent;
+}
+.deleteBtn:hover {
+    background-color: #e7e4aa;
+    color: rgb(112, 110, 88);
+}
+/*navigation bar styling*/
+    a:link, a:visited{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+/*recipe navigation title styling*/
+    .recipe-container{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .recipe-title {
+        font-size: 30px;
+        position: relative;
+        transition: font-size 1s;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-radius: 50px;
+    }
+    
+    .recipe-title:hover {
+        font-size: 50px;
+        background-color: #d6f1be;
+    }
+/*fridge navigation title styling*/
+    .fridge-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .fridge-title{
+        font-size: 30px;
+        position: relative;
+        transition: font-size 1s;
+        text-align: center;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-radius: 50px;
+        background-color: #ebf8e8;
+    }
+
+    .fridge-title:hover {
+        font-size: 50px;
+        background-color: #d6f1be;
+    }
+/*cart navigation title styling*/
+    .cart-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .cart-title{
+        font-size: 30px;
+        position: relative;
+        transition: font-size 1s;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-radius: 50px;
+    }
+    .cart-title:hover {
+        font-size: 50px;
+        background-color: #d6f1be;
+    }
+/*home navigation title styling*/
+    .home-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .home-title{
+        font-size: 30px;
+        position: relative;
+        transition: font-size 1s;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-radius: 50px;
+    }
+    .home-title:hover {
+        font-size: 50px;
+        background-color: #d6f1be;
+    }

@@ -3,26 +3,13 @@ html {
 }
 body { 
     background-color: rgb(255, 255, 255);
-    cursor: url(knife.png), pointer;
+    cursor: url(../assets/project-image/knife.png), pointer;
     min-height: 100%;
-}
-
-a:link, a:visited{
-    color: black;
-}
-a{
-    text-decoration: none;
 }
 .cover-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.menu-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-content: flex-end;
 }
 .topic{
     color: rgb(0, 0, 0);
@@ -30,6 +17,19 @@ a{
     text-align: left;
     margin-bottom: 15px;
     margin-top: 50px;
+}
+/*styling the menu*/
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: black;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: flex-end;
 }
 .recipe-container{
     display: flex;
@@ -47,7 +47,6 @@ a{
     padding-left: 15px;
     border-radius: 50px;
   }
-  
 .recipe-title:hover {
     font-size: 50px;
     background-color: #d6f1be;
@@ -67,7 +66,6 @@ a{
     padding-left: 15px;
     border-radius: 50px;
 }
-
 .fridge-title:hover {
     font-size: 50px;
     background-color: #d6f1be;
@@ -87,12 +85,10 @@ a{
     padding-left: 15px;
     border-radius: 50px;
 }
-
 .cart-title:hover {
     font-size: 50px;
     background-color: #d6f1be;
   }
-
 .home-container{
     display: flex;
     flex-direction: row-reverse;

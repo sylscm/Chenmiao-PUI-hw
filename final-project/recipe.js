@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   
-    // A map to hold the recipe sets for each section
+    //recipe sets for each section
     const sectionRecipeCardSets = {
       'main-course': new Set(),
       'dessert': new Set(),
       'drink': new Set()
     };
   
-    // Function to add new recipe card
+    //add new recipe card
     function addNewRecipe(sectionId, title, content) {
       const id = Date.now();
       const newRecipeCard = new RecipeCard(sectionId, id, title, content);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return newRecipeCard;
     }
   
-    // Function to create recipe element in DOM
+    //create recipe element in DOM
     function createRecipeElement(recipeCard) {
       const section = document.createElement('section');
       section.classList.add('recipe');
@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return section;
     }
   
-    // Function to add the recipe element to the DOM
+    //add the recipe element to the DOM
     function addRecipeToDOM(recipeCard, container) {
       const recipeElement = createRecipeElement(recipeCard);
       container.appendChild(recipeElement);
     }
   
-    // Function to delete a recipe card
+    //delete a recipe card
     function deleteRecipe(recipeCard) {
       const sectionRecipes = sectionRecipeCardSets[recipeCard.sectionId];
       sectionRecipes.delete(recipeCard);
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       saveToLocalStorage(recipeCard.sectionId);
     }
   
-    // Function to save recipes to localStorage
+    //save recipes to localStorage
     function saveToLocalStorage(sectionId) {
       const recipesData = Array.from(sectionRecipeCardSets[sectionId]).map(card => ({
         sectionId: card.sectionId,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem(`recipes-${sectionId}`, JSON.stringify(recipesData));
     }
   
-    // Function to retrieve recipes from localStorage
+    //retrieve recipes from localStorage
     function retrieveFromLocalStorage(sectionId, container) {
       const recipesData = JSON.parse(localStorage.getItem(`recipes-${sectionId}`)) || [];
       recipesData.forEach(data => {
@@ -99,9 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // Initialize each section by attaching event listeners and retrieving from localStorage
+    //initialize each section by attaching event listeners and retrieving from localStorage
     Object.keys(sectionRecipeCardSets).forEach(sectionId => {
-        
       const container = document.getElementById(`section-content-${sectionId}`);
       const addRecipeButton = container.querySelector('.add-recipe');
       addRecipeButton.addEventListener('click', () => {
@@ -112,9 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
       retrieveFromLocalStorage(sectionId, container);
     });
   });
-
+/**use gsap.js to enable the navigation bar can lead 
+ * user to each section of rescipes */
 gsap.registerPlugin(ScrollTrigger);
-// Detect if a link's href goes to the current page
+//detect if a link's href goes to the current page
 function getSamePageAnchor (link) {
   if (
     link.protocol !== window.location.protocol ||
@@ -124,11 +124,10 @@ function getSamePageAnchor (link) {
   ) {
     return false;
   }
-
   return link.hash;
 }
 
-// Scroll to a given hash, preventing the event given if there is one
+//scroll to a given hash, preventing the event given if there is one
 function scrollToHash(hash, e) {
   const elem = hash ? document.querySelector(hash) : false;
   if(elem) {
@@ -136,13 +135,12 @@ function scrollToHash(hash, e) {
     gsap.to(window, {scrollTo: elem});
   }
 }
-
-// If a link's href is within the current page, scroll to it instead
+//if a link's href is within the current page, scroll to it instead
 document.querySelectorAll('a[href]').forEach(a => {
   a.addEventListener('click', e => {
     scrollToHash(getSamePageAnchor(a), e);
   });
 });
 
-// Scroll to the element in the URL's hash on load
+//scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);

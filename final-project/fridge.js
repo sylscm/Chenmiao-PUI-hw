@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
   loadList();
 });
 
-//Load the list from localStorage and recreate list items
+//Load the list from localStorage
 function loadList() {
-  const items = JSON.parse(localStorage.getItem("myShoppingList")) || [];
+  const items = JSON.parse(localStorage.getItem("myFridgeList")) || [];
   items.forEach(item => createListItem(item));
 }
 
-//Create list with a delete button
+//create a list item with a delete button
 function createListItem(text) {
   const li = document.createElement("li");
   li.textContent = text;
@@ -24,28 +24,31 @@ function createListItem(text) {
   document.getElementById("shopping-list").appendChild(li);
 }
 
-// Add a new list item from user input
+//add new list item from user input
 function newElement() {
   const inputValue = document.getElementById("myInput").value;
   if (inputValue === '') {
     alert("You must write something!");
     return;
   }
-  createListItem(inputValue); 
+  createListItem(inputValue);
   saveList();
-  document.getElementById("myInput").value = "";
+  // Clear input field
+  document.getElementById("myInput").value = ""; 
 }
 
-// Save to localStorage
+// Save the current list state to localStorage
 function saveList() {
   const listItems = Array.from(document.querySelectorAll('#shopping-list li'));
   const itemsData = listItems.map(li => li.firstChild.textContent);
-  localStorage.setItem("myShoppingList", JSON.stringify(itemsData));
+  localStorage.setItem("myFridgeList", JSON.stringify(itemsData));
 }
 
-// checking items
+// Event listener for checking items
 document.querySelector('ul').addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
+
+

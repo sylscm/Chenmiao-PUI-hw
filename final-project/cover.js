@@ -1,14 +1,14 @@
 const broccoli = document.getElementById("runaway");
 const tomato = document.getElementById("runaway2");
 const egg = document.getElementById("runaway3");
-
+/**Useing Anime.js*/
 const animateMove = (element, prop, pixels) =>
   anime({
     targets: element,
     [prop]: `${pixels}px`,
     easing: "easeOutCirc"
   });
-
+/**Add event listener to each*/
 ["mouseover", "click"].forEach(function (el) {
   broccoli.addEventListener(el, function (event) {
     const top = getRandomNumber(window.innerHeight - this.offsetHeight);
@@ -33,7 +33,6 @@ const animateMove = (element, prop, pixels) =>
       animateMove(this, "top", top).play();
     });
 });
-
 const getRandomNumber = (num) => {
   return Math.floor(Math.random() * (num + 1));
 };
