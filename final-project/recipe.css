@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: row;
 }
-.topic{
+.header{
     color: rgb(0, 0, 0);
     font-size: 150px;
     margin-bottom: 15px;

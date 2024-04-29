@@ -11,7 +11,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.topic{
+.header{
     color: rgb(0, 0, 0);
     font-size: 200px;
     text-align: left;
