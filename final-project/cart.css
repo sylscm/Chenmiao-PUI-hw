@@ -36,7 +36,7 @@ body{
     .input {
         display: flex;
         flex-direction: column-reverse;
-        width: 320px;
+        width: 450px;
         border:#f5cece;
         color: white;
         text-align: center;
@@ -54,6 +54,9 @@ body{
         padding: 10px;
         float: left;
         font-size: 16px;
+    }
+    label{
+        color:#555;
     }
 /*addbtn*/
     .button-container{

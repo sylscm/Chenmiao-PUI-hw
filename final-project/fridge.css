@@ -27,7 +27,7 @@ body{
 .header {
     display: flex;
     flex-direction: column-reverse;
-    width: 320px;
+    width: 450px;
     border:#f5cece;
     color: white;
     text-align: center;
@@ -47,6 +47,9 @@ input {
     font-size: 16px;
     background-color:#bfdfe9;
     border:5px solid #869ea9;
+}
+label{
+    color:#555;
 }
 /*Addbtn styling*/
 .button-container{
