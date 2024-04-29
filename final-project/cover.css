@@ -5,6 +5,7 @@ body {
     background-color: rgb(255, 255, 255);
     cursor: url(../assets/project-image/knife.png), pointer;
     min-height: 100%;
+    font-family: "Gill Sans", sans-serif;
 }
 .cover-container{
     display: flex;
@@ -16,7 +17,7 @@ body {
     font-size: 200px;
     text-align: left;
     margin-bottom: 15px;
-    margin-top: 50px;
+    margin-top: 2px;
 }
 /*styling the menu*/
 a{
@@ -30,6 +31,7 @@ a:link, a:visited{
     flex-direction: column;
     margin-top: 10px;
     justify-content: flex-end;
+    width: 200px;
 }
 .recipe-container{
     display: flex;
@@ -59,7 +61,7 @@ a:link, a:visited{
     font-size: 30px;
     position: relative;
     transition: font-size 1s;
-    text-align: center;
+    text-align: right;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;

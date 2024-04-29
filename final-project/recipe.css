@@ -9,6 +9,7 @@ body {
     background-size: cover; /* Resize the background image to cover the entire container */
      /* Center the background image */
     background-repeat: repeat-y; 
+    font-family: "Gill Sans", sans-serif;
 }
 .cover-container{
     display: flex;
