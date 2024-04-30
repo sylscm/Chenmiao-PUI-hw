@@ -230,5 +230,13 @@ body {
     .header {
         font-size: 50px;
     }
+    .recipe-title, .fridge-title, .cart-title, .home-title{
+        font-size: 15px;
+        transition: font-size 1s;
+    }
+    .recipe-title:hover, .fridge-title:hover, .cart-title:hover, .home-title:hover{
+        font-size: 20px;
+        transition: font-size 1s;
+    }
 }
 

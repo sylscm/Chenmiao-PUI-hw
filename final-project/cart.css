@@ -232,6 +232,10 @@ body{
         font-size: 15px;
         transition: font-size 1s;
     }
+    .recipe-title:hover, .fridge-title:hover, .cart-title:hover, .home-title:hover{
+        font-size: 20px;
+        transition: font-size 1s;
+    }
     input{
         width: 30px;
     }
