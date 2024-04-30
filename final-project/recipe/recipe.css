@@ -5,7 +5,7 @@ html {
 body { 
     background-color: #f1e5b8; 
     min-height: 100%;
-    background-image: url('../assets/project-image/note.jpg');
+    background-image: url('/assets/project-image/note.jpg');
     background-size: cover;
     background-repeat: repeat-y; 
     font-family: "Gill Sans", sans-serif;
