@@ -6,15 +6,16 @@ body {
     background-color: #f1e5b8; 
     min-height: 100%;
     background-image: url('../assets/project-image/note.jpg');
-    background-size: cover; /* Resize the background image to cover the entire container */
-     /* Center the background image */
+    background-size: cover;
     background-repeat: repeat-y; 
     font-family: "Gill Sans", sans-serif;
+    background-attachment: fixed;
 }
 .cover-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .title-container{
     display: flex;
@@ -55,7 +56,7 @@ body {
 #left-content{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: flex;
 }
 /*menu styling*/
     a:link, a:visited{
@@ -86,7 +87,7 @@ body {
         background-color:rgb(223, 214, 181);
     } 
     .recipe-title:hover {
-        font-size: 50px;
+        font-size: 35px;
         background-color: #d6f1be;
     }
     .fridge-container{
@@ -106,7 +107,7 @@ body {
     }
 
     .fridge-title:hover {
-        font-size: 50px;
+        font-size: 35px;
         background-color: #d6f1be;
     }
     .cart-container{
@@ -125,7 +126,7 @@ body {
         border-radius: 50px;
     }
     .cart-title:hover {
-        font-size: 50px;
+        font-size: 35px;
         background-color: #d6f1be;
     }
     .home-container{
@@ -144,12 +145,11 @@ body {
         border-radius: 50px;
     }
     .home-title:hover {
-        font-size: 50px;
+        font-size: 35px;
         background-color: #d6f1be;
     }
 /*sections of recipes styling*/
 #sections{
-    width: 450px;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,6 @@ body {
     margin-right: 200px;
 }
 .section-content{
-    width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -228,12 +227,3 @@ body {
     background-color: #9c8653;
 }
 
-@media (max-width: 768px) {
-    .cover-container {
-        flex-direction: column;
-    }
-
-    .vl {
-        display: none; /* Hide vertical line on smaller screens */
-    }
-}

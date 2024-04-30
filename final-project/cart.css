@@ -21,7 +21,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
 }
 /*title*/
     .topic{
@@ -94,7 +93,6 @@ body{
         background: #ffffff;
         font-size: 18px;
         transition: 0.2s;
-        width: 800px;
         margin: 20px;
     }
     ul li:hover {
@@ -159,7 +157,7 @@ body{
     }
     .recipe-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #fff8fa;
     }
     /*fridge styling*/
     .fridge-container{
@@ -179,7 +177,7 @@ body{
     }
     .fridge-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #fff8fa;
     }
     /*cart styling*/
     .cart-container{
@@ -200,7 +198,7 @@ body{
     }
     .cart-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #fff8fa;
     }
     /*home styling*/
     .home-container{
@@ -220,6 +218,6 @@ body{
     }
     .home-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #fff8fa;
     }
     

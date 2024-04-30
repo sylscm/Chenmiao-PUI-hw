@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Gill Sans", sans-serif; 
+    background-attachment: fixed;
 }
 .general-container{
     display: flex;
@@ -80,19 +81,19 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 900px;
     
 }
 ul li {
+    color: rgb(47, 49, 51);
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #f3ebb7;
+    background: #dce9ed;
     font-size: 18px;
     transition: 0.2s;
     width: 100px;
     margin: 20px;
-    border: 5px solid #e1d7a2;
+    border: 2px solid #ffffff;
 
 }
 ul li:hover {
@@ -136,6 +137,7 @@ ul li.checked::before {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
+        width: 200px;
     }
 /*recipe navigation title styling*/
     .recipe-container{
@@ -157,7 +159,7 @@ ul li.checked::before {
     
     .recipe-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #beeef1;
     }
 /*fridge navigation title styling*/
     .fridge-container{
@@ -174,12 +176,12 @@ ul li.checked::before {
         padding-bottom: 15px;
         padding-left: 15px;
         border-radius: 50px;
-        background-color: #ebf8e8;
+        background-color: #d2e4e8;
     }
 
     .fridge-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #beeef1;
     }
 /*cart navigation title styling*/
     .cart-container{
@@ -199,7 +201,7 @@ ul li.checked::before {
     }
     .cart-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #beeef1;
     }
 /*home navigation title styling*/
     .home-container{
@@ -219,5 +221,5 @@ ul li.checked::before {
     }
     .home-title:hover {
         font-size: 50px;
-        background-color: #d6f1be;
+        background-color: #beeef1;
     }
