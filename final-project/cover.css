@@ -30,6 +30,7 @@ a:link, a:visited{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    justify-content: flex-end;
     width: 200px;
 }
 .recipe-container{
@@ -120,4 +121,15 @@ img{
 
 #runaway3{
     width: 160px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 50px;
+        transition: font-size 1s;
+    }
+    .recipe-title, .fridge-title, .cart-title, .home-title{
+        font-size: 15px;
+        transition: font-size 1s;
+    }
 }

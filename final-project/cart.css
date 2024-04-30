@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 body{ 
     background-color: #f6e0e6;
     font-family: "Gill Sans", sans-serif;
@@ -36,7 +39,6 @@ body{
     .input {
         display: flex;
         flex-direction: column-reverse;
-        width: 450px;
         border:#f5cece;
         color: white;
         text-align: center;
@@ -50,7 +52,6 @@ body{
         margin: 20px;
         border: none;
         border-radius: 0;
-        width: 200px;
         padding: 10px;
         float: left;
         font-size: 16px;
@@ -89,7 +90,7 @@ body{
     ul li {
         cursor: pointer;
         position: relative;
-        padding: 12px 8px 12px 40px;
+        padding: 12px 8px 12px 10px;
         background: #ffffff;
         font-size: 18px;
         transition: 0.2s;
@@ -220,4 +221,28 @@ body{
         font-size: 50px;
         background-color: #fff8fa;
     }
-    
+
+@media (max-width: 768px) {
+    .topic {
+        font-size: 50px;
+        transition: font-size 1s;
+        padding-left: 10px;
+    }
+    .recipe-title, .fridge-title, .cart-title, .home-title{
+        font-size: 15px;
+        transition: font-size 1s;
+    }
+    input{
+        width: 30px;
+    }
+    label{
+        font-size: 10px;
+    }
+    .add{
+        width: 50px;
+    }
+    .list-container{
+        margin: 10px;
+        padding-right: 10px;
+    }
+}

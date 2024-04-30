@@ -189,7 +189,7 @@ body {
     flex-wrap:wrap;
 }
 #section-content-main-course, #section-content-dessert, #section-content-drink{
-    width: 1000px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -225,5 +225,10 @@ body {
 
 .delete-recipe:hover {
     background-color: #9c8653;
+}
+@media (max-width: 768px) {
+    .header {
+        font-size: 50px;
+    }
 }
 

@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 body{ 
     background-image: url('../assets/project-image/fridge.jpg');
     background-color: #cccccc;
@@ -5,6 +8,7 @@ body{
     background-repeat: no-repeat;
     font-family: "Gill Sans", sans-serif; 
     background-attachment: fixed;
+    min-height: 100%;
 }
 .general-container{
     display: flex;
@@ -223,3 +227,8 @@ ul li.checked::before {
         font-size: 50px;
         background-color: #beeef1;
     }
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 50px; /* Smaller font size for smaller screens */
+}}
