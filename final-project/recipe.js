@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     class RecipeCard {
       constructor(sectionId, id, title, content) {
         this.sectionId = sectionId;
@@ -144,3 +145,15 @@ document.querySelectorAll('a[href]').forEach(a => {
 
 //scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
+
+//add label to all inputs
+function addLabels() {
+  const inputs = document.querySelectorAll('input');
+  inputs.forEach(input => {
+      const label = document.createElement('label');
+      label.htmlFor = input.id;
+      label.textContent = 'Put in your recipes~'; // Capitalize the first letter of the input type
+      input.parentNode.insertBefore(label, input);
+  });
+}
+window.onload = addLabels;
